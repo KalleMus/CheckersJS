@@ -36,6 +36,7 @@ function toHighlightedPiece(pieceType) {
         case K1S:
             return K1H;
         case K2:
+        case K2S:
             return K2H;
         case ES:
             return ESH;
@@ -83,8 +84,8 @@ function toNonHighlightedPiece(piece) {
     return ES;
 }
 
-function highlightedPieceToNormal(highlightedPieceType) {
-    switch (highlightedPieceType) {
+function highlightedPieceToNormal(highlightedPiece) {
+    switch (highlightedPiece) {
         case P1H:
             return P1;
         case P2H:
@@ -98,8 +99,8 @@ function highlightedPieceToNormal(highlightedPieceType) {
     }
 }
 
-function selectedPieceToNormal(highlightedPieceType) {
-    switch (highlightedPieceType) {
+function selectedPieceToNormal(piece) {
+    switch (piece) {
         case P1S:
             return P1;
         case P1SH:
