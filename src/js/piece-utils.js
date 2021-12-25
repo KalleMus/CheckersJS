@@ -46,11 +46,11 @@ function isPlayerTwoKingPiece(pieceType) {
 // isHighlightedPiece methods...
 
 function isSelectedPiece(pieceType) {
-    return pieceType == P1S || pieceType == P2S || pieceType == K1S || pieceType == K2S;
+    return SELECTED_PIECES.includes(pieceType);
 }
 
 function isHighlightedPiece(pieceType) {
-    return pieceType == P1H || pieceType == K1H || pieceType == P2H || pieceType == K2H || pieceType == ESH;
+    return HIGLIGHTED_PIECES.includes(pieceType);
 }
 
 function doesPieceBelongToPlayer(piece, player) {

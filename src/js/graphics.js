@@ -103,26 +103,13 @@ function drawRectangle(x, y, size, color) {
 }
 
 function getCellColor(cellType) {
-    switch (cellType) {
-        case P1:
-        case P1S:
-        case P1H:
-        case K1:
-        case K1S:
-        case K1H:
-            return P1_COLOR;
-        
-        case P2:
-        case P2S:
-        case P2H:
-        case K2:
-        case K2S:
-        case K2H:
-            return P2_COLOR;
-
-        default:
-            return ES_COLOR;
+    if (isPlayerOnePiece(cellType)) {
+        return P1_COLOR;
     }
+    if (isPlayerTwoPiece(cellType)) {
+        return P2_COLOR;
+    }
+    return ES_COLOR;
 }
 
 function displayPlayersTurn(player) {

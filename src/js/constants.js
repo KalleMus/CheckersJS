@@ -43,32 +43,55 @@ const DIAGONAL_DOWN_DIRECTIONS = [
 const P1 = 1;
 const P1S = 11;
 const P1H = 12;
+const P1SH = 13;
+
 const P2 = 2;
 const P2S = 21;
 const P2H = 22;
+const P2SH = 23;
+
 const K1 = 3;
 const K1S = 31;
 const K1H = 32;
+const K1SH = 33;
+
 const K2 = 4;
 const K2S = 41;
 const K2H = 42;
+const K2SH = 43;
+
 const ES = 0;
 const ESH = 10;
 
 const PLAYER_ONE_NORMAL_PIECES = [
-    P1, P1S, P1H
+    P1, P1S, P1H, P1SH
 ];
 
 const PLAYER_ONE_KING_PIECES = [
-    K1, K1S, K1H
+    K1, K1S, K1H, K1SH
 ];
 
 const PLAYER_TWO_NORMAL_PIECES = [
-    P2, P2S, P2H
+    P2, P2S, P2H, P2SH
 ];
 
 const PLAYER_TWO_KING_PIECES = [
-    K2, K2S, K2H
+    K2, K2S, K2H, K2SH
+];
+
+const SELECTED_PIECES = [
+    P1S, P1SH,
+    K1S, K1SH,
+    P2S, P2SH,
+    K2S, K2SH
+];
+
+const HIGLIGHTED_PIECES = [
+    P1H,
+    K1H,
+    P2H,
+    K2H,
+    ESH
 ];
 
 let GAME_BOARD = [
